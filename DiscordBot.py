@@ -24,7 +24,7 @@ async def on_ready():
     for guild in bot.guilds:
         print(f"- {guild.id} (name: {guild.name})")
         guild_count = guild_count + 1
-    print("Silas Manager is in " + str(guild_count) + " guilds.")
+    print("Bot is in " + str(guild_count) + " guilds.")
     await bot.change_presence(
         activity=discord.Activity(type=discord.ActivityType.watching, name=f"{guild_count} Servers"))
 
